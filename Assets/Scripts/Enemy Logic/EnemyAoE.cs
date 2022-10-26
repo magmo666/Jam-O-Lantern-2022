@@ -25,7 +25,9 @@ public class EnemyAoE : MonoBehaviour
     {
         Debug.Log("Player has left collider.");
         if (coroutine == null) return;
-        StopCoroutine(coroutine);  
+        StopCoroutine(coroutine);
+        coroutine = null;
+
     }
 
 
