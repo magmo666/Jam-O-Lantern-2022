@@ -4,26 +4,11 @@ using UnityEngine;
 
 public class EnemyAoE : MonoBehaviour
 {
-    IEnumerator coroutine;
-    public int decreaseHealth = 1;
-    public float damageInterval = 0.5f;
+    IEnumerator coroutine; //coroutine variable that will be used to start/stop DamageOverTime
+    public int decreaseHealth = 1; //amount of damage dealth to player's health
+    public float damageInterval = 0.5f; //time interval which player takes damage
 
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    void FixedUpdate()
-    {
-        
-    }
-
+    //starts the DamageOverTime coroutine if a player collides with the AoE collider and isn't running already.
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
@@ -35,6 +20,7 @@ public class EnemyAoE : MonoBehaviour
         }
     }
 
+    //stops the DamageOverTime coroutine when the player leaves the collider and if the coroutine was ever started
     void OnTriggerExit2D(Collider2D collision)
     {
         Debug.Log("Player has left collider.");
@@ -42,6 +28,8 @@ public class EnemyAoE : MonoBehaviour
         StopCoroutine(coroutine);  
     }
 
+
+    //does set amount of damage to player at a fixed interval until coroutine is stopped
     IEnumerator DamageOverTime(PlayerHealth health)
     {
         while (true)
