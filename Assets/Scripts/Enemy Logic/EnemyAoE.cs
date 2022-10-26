@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class EnemyAoE : MonoBehaviour
 {
+    IEnumerator coroutine;
+    public int decreaseHealth = 1;
+    public float damageInterval = 0.5f;
 
-    //[Serialize Field] private GameObject player;
-    // Start is called before the first frame update
     void Start()
     {
 
@@ -20,16 +21,34 @@ public class EnemyAoE : MonoBehaviour
 
     void FixedUpdate()
     {
-
+        
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(1);
             Debug.Log("Player has collided with enemy collider.");
+            if (coroutine != null) return; 
+            coroutine = DamageOverTime(collision.gameObject.GetComponent<PlayerHealth>());
+            StartCoroutine(coroutine);
+        }
+    }
 
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        Debug.Log("Player has left collider.");
+        if (coroutine == null) return;
+        StopCoroutine(coroutine);  
+    }
+
+    IEnumerator DamageOverTime(PlayerHealth health)
+    {
+        while (true)
+        {
+            Debug.Log("Player has taken damage.");
+            health.TakeDamage(decreaseHealth);
+            yield return new WaitForSeconds(damageInterval);
         }
     }
 }
