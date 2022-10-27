@@ -12,10 +12,13 @@ public class EnemyAoE : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
-        {
+        {     
             Debug.Log("Player has collided with enemy collider.");
+
+            PlayerHealth health = collision.gameObject.GetComponent<PlayerHealth>();
+            //health.TakeDamage(decreaseHealth);
             if (coroutine != null) return; 
-            coroutine = DamageOverTime(collision.gameObject.GetComponent<PlayerHealth>());
+            coroutine = DamageOverTime(health);
             StartCoroutine(coroutine);
         }
     }
@@ -23,10 +26,13 @@ public class EnemyAoE : MonoBehaviour
     //stops the DamageOverTime coroutine when the player leaves the collider and if the coroutine was ever started
     void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log("Player has left collider.");
-        if (coroutine == null) return;
-        StopCoroutine(coroutine);
-        coroutine = null;
+        if (collision.gameObject.tag == "Player")
+        {
+            Debug.Log("Player has left collider.");
+            if (coroutine == null) return;
+            StopCoroutine(coroutine);
+            coroutine = null;
+        }
 
     }
 
