@@ -13,6 +13,12 @@ public class PlayerHealth : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
+        if (healthBar == null)
+        {
+            Debug.Log("No health bar assigned.");
+            return;
+        }
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     public void TakeDamage(int damageDealt) 
@@ -20,7 +26,7 @@ public class PlayerHealth : MonoBehaviour
         Debug.Log("Player health is now " + currentHealth + ".");
         currentHealth -= damageDealt;
 
-        //healthBar.SetHealth(currentHealth);
+        healthBar.SetHealth(currentHealth);
 
         if (currentHealth <= 0)
         {
