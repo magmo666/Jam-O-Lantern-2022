@@ -1301,10 +1301,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fire: {fileID: 9199070451593131686, guid: d893a9e64a1a6cd4a95c54b273316810, type: 3}
-  fireRate: 5
+  fireRate: 1
   nextFire: 0
   shootingPoint: {fileID: 399840528}
   player: {fileID: 827217389}
+  check: 0
 --- !u!1 &1978688901
 GameObject:
   m_ObjectHideFlags: 0
