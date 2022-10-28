@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    [SerializeField] private float timeToExtinguish = 4; //time in seconds it takes to be extinguished
+    [SerializeField] private float timeToExtinguish = 2f; //time in seconds it takes to be extinguished
     [SerializeField] private GameObject fireContainer; //entire fire container
 
     void Start()
