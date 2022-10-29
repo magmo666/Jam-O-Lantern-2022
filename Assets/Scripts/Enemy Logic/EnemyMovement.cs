@@ -8,8 +8,8 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] protected GameObject enemy;
 
     [SerializeField] protected float speed = -10f;
-    // Update is called once per frame
-    void Update()
+    
+    public void Update()
     {
         if (player == null)
         {
