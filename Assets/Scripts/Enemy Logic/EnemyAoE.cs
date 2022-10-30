@@ -6,7 +6,7 @@ public class EnemyAoE : MonoBehaviour
 {
 
     IEnumerator coroutine; //coroutine variable that will be used to start/stop DamageOverTime
-    public int decreaseHealth = 1; //amount of damage dealth to player's health
+    public int decreaseHealth = 10; //amount of damage dealth to player's health
     public float damageInterval = 0.5f; //time interval which player takes damage
 
     Transform parentTransform;
@@ -48,7 +48,7 @@ public class EnemyAoE : MonoBehaviour
 
 
     //does set amount of damage to player at a fixed interval until coroutine is stopped
-    IEnumerator DamageOverTime(PlayerHealth health)
+    public virtual IEnumerator DamageOverTime(PlayerHealth health)
     {
         while (true)
         {
