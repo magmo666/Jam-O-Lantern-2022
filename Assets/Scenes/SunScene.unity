@@ -539,7 +539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810e68a02be51d94fb973284452f73d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  decreaseHealth: 1
+  decreaseHealth: 100
   damageInterval: 0.5
 --- !u!58 &2052550869
 CircleCollider2D:
