@@ -12,6 +12,9 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private Transform playerContainerTransform;
 
+    [SerializeField] private GameObject playerCollider;
+    [SerializeField] private SpriteRenderer playerSprite;
+
 
     private Vector2 moveDirection = Vector2.zero;
 
@@ -72,15 +75,27 @@ public class PlayerController : MonoBehaviour
         switch (move.ReadValue<Vector2>().x)
         {
             case < 0:
-                playerContainerTransform.rotation = new Quaternion(0f, 180f, 0f, 0f);
+                playerSprite.flipX = true;
+                playerCollider.transform.rotation = new Quaternion(0f, 180f, 0f, 0f);
+
+                //playerContainerTransform.localScale = new Vector3(-1f, 1f, 1f);
+                //playerContainerTransform.rotation = new Quaternion(0f, 180f, 0f, 0f);
+
+
 
                 break;
 
             case > 0:
-                playerContainerTransform.rotation = new Quaternion(0f, 0f, 0f, 0f);
+                playerSprite.flipX = false;
+                playerCollider.transform.rotation = new Quaternion(0f, 0f, 0f, 0f);
+
+
+                //playerContainerTransform.localScale = new Vector3(1f, 1f, 1f);
+                //playerContainerTransform.rotation = new Quaternion(0f, 0f, 0f, 0f);
 
                 break;
         }
+
 
 
     }

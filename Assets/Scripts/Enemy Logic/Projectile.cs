@@ -21,6 +21,11 @@ public class Projectile : MonoBehaviour
             Debug.Log("Hit player");
             Destroy(fireContainer);
         }
+
+        if(collision.gameObject.tag == "TilemapWallCollider")
+        {
+            Destroy(fireContainer);
+        }
     }
 
     //will destroy itself after a set amount of seconds
