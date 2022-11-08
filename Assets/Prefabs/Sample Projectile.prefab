@@ -153,8 +153,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 732bf693aa5937e4d8ee739fa54d2bf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  candle: {fileID: 730888098560923058, guid: f179fb87d62bc544aa2237601a89018c, type: 3}
   offset: 20
+  audioSource: {fileID: 0}
+  clip: {fileID: 8300000, guid: 7d92a827f52b30545b7d7c325957eebc, type: 3}
+  volume: 0.5
 --- !u!1001 &7399423525663284201
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -394,6 +394,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 827217389}
+    - target: {fileID: 730888098560923056, guid: f179fb87d62bc544aa2237601a89018c, type: 3}
+      propertyPath: m_Volume
+      value: 0.536
+      objectReference: {fileID: 0}
     - target: {fileID: 730888098560923058, guid: f179fb87d62bc544aa2237601a89018c, type: 3}
       propertyPath: m_Name
       value: Candle Container (1)
@@ -994,6 +998,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cefe6cff29e2d0748915060ccc46c3aa, type: 3}
+--- !u!1 &353917619 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7591320370315961527, guid: f179fb87d62bc544aa2237601a89018c, type: 3}
+  m_PrefabInstance: {fileID: 730888098784592034}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &353917623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353917619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce1b76dd38dd9d947b42b1197d130a2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myAudioSource: {fileID: 1573064245}
+  myAudioClip1: {fileID: 8300000, guid: 7d92a827f52b30545b7d7c325957eebc, type: 3}
+  volume: 1
 --- !u!1001 &356196869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1067,6 +1091,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1932860444}
     m_Modifications:
+    - target: {fileID: 730888096927265769, guid: f179fb87d62bc544aa2237601a89018c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.011
+      objectReference: {fileID: 0}
     - target: {fileID: 730888097028449584, guid: f179fb87d62bc544aa2237601a89018c, type: 3}
       propertyPath: speed
       value: 0.5
@@ -1075,6 +1103,14 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 827217389}
+    - target: {fileID: 730888098560923056, guid: f179fb87d62bc544aa2237601a89018c, type: 3}
+      propertyPath: m_Volume
+      value: 0.122
+      objectReference: {fileID: 0}
+    - target: {fileID: 730888098560923056, guid: f179fb87d62bc544aa2237601a89018c, type: 3}
+      propertyPath: MaxDistance
+      value: 2.2115955
+      objectReference: {fileID: 0}
     - target: {fileID: 730888098560923058, guid: f179fb87d62bc544aa2237601a89018c, type: 3}
       propertyPath: m_Name
       value: Candle Container
@@ -1781,7 +1817,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -3474,6 +3510,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1861402937098343554, guid: 5eb17d9e95da45848a6122a368bff0ad, type: 3}
   m_PrefabInstance: {fileID: 1861402936279810418}
   m_PrefabAsset: {fileID: 0}
+--- !u!81 &827217394
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827217389}
+  m_Enabled: 1
 --- !u!1001 &849518440
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3680,7 +3724,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 876639021}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.04, z: 0}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -37025,6 +37069,14 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 827217389}
+    - target: {fileID: 730888098560923056, guid: f179fb87d62bc544aa2237601a89018c, type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 730888098560923056, guid: f179fb87d62bc544aa2237601a89018c, type: 3}
+      propertyPath: m_Volume
+      value: 0.122
+      objectReference: {fileID: 0}
     - target: {fileID: 730888098560923058, guid: f179fb87d62bc544aa2237601a89018c, type: 3}
       propertyPath: m_Name
       value: Candle Container (2)
@@ -37472,6 +37524,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 827217389}
+    - target: {fileID: 730888098560923056, guid: f179fb87d62bc544aa2237601a89018c, type: 3}
+      propertyPath: m_Volume
+      value: 0.048
+      objectReference: {fileID: 0}
     - target: {fileID: 730888098560923058, guid: f179fb87d62bc544aa2237601a89018c, type: 3}
       propertyPath: m_Name
       value: Candle Container (1)
@@ -37522,6 +37578,107 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f179fb87d62bc544aa2237601a89018c, type: 3}
+--- !u!1 &1109216317 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7591320370315961527, guid: f179fb87d62bc544aa2237601a89018c, type: 3}
+  m_PrefabInstance: {fileID: 366897779}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1109216321
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109216317}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7d92a827f52b30545b7d7c325957eebc, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &1119725380 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7415015553583595239, guid: 1a00e4d9d3fbee24c8d5ade8fb5d041c, type: 3}
@@ -38562,6 +38719,11 @@ GameObject:
 --- !u!4 &1573064244 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 730888098560923059, guid: f179fb87d62bc544aa2237601a89018c, type: 3}
+  m_PrefabInstance: {fileID: 366897779}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1573064245 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 730888098560923056, guid: f179fb87d62bc544aa2237601a89018c, type: 3}
   m_PrefabInstance: {fileID: 366897779}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1577895108 stripped
@@ -119620,6 +119782,54 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 827217389}
+    - target: {fileID: 730888098560923056, guid: f179fb87d62bc544aa2237601a89018c, type: 3}
+      propertyPath: Priority
+      value: 245
+      objectReference: {fileID: 0}
+    - target: {fileID: 730888098560923056, guid: f179fb87d62bc544aa2237601a89018c, type: 3}
+      propertyPath: m_Volume
+      value: 0.564
+      objectReference: {fileID: 0}
+    - target: {fileID: 730888098560923056, guid: f179fb87d62bc544aa2237601a89018c, type: 3}
+      propertyPath: MaxDistance
+      value: 3.4421654
+      objectReference: {fileID: 0}
+    - target: {fileID: 730888098560923056, guid: f179fb87d62bc544aa2237601a89018c, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 730888098560923056, guid: f179fb87d62bc544aa2237601a89018c, type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].time
+      value: 0.16123664
+      objectReference: {fileID: 0}
+    - target: {fileID: 730888098560923056, guid: f179fb87d62bc544aa2237601a89018c, type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].value
+      value: 0.3048401
+      objectReference: {fileID: 0}
+    - target: {fileID: 730888098560923056, guid: f179fb87d62bc544aa2237601a89018c, type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].inSlope
+      value: -1.3019011
+      objectReference: {fileID: 0}
+    - target: {fileID: 730888098560923056, guid: f179fb87d62bc544aa2237601a89018c, type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].inWeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 730888098560923056, guid: f179fb87d62bc544aa2237601a89018c, type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].inWeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 730888098560923056, guid: f179fb87d62bc544aa2237601a89018c, type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].outSlope
+      value: -1.3019011
+      objectReference: {fileID: 0}
+    - target: {fileID: 730888098560923056, guid: f179fb87d62bc544aa2237601a89018c, type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].outWeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 730888098560923056, guid: f179fb87d62bc544aa2237601a89018c, type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].outWeight
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 730888098560923058, guid: f179fb87d62bc544aa2237601a89018c, type: 3}
       propertyPath: m_Name
       value: Candle Container

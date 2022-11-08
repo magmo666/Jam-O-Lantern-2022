@@ -24,12 +24,12 @@ public class EnemyAoE : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {     
             Debug.Log("Player has collided with enemy collider.");
-
             PlayerHealth health = collision.gameObject.GetComponent<PlayerHealth>();
             //health.TakeDamage(decreaseHealth);
             if (coroutine != null) return; 
             coroutine = DamageOverTime(health);
             StartCoroutine(coroutine);
+            
         }
     }
 
